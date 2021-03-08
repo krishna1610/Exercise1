@@ -4,7 +4,7 @@ class AppIntro extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      btnName: ["Main call to action", "Secondary action", "Actions"],
+      btnNames: ["Main call to action", "Secondary action", "Actions"],
       activeBtn: 0,
     };
     this.btnClicked = this.btnClicked.bind(this);
@@ -26,7 +26,7 @@ class AppIntro extends React.Component {
               short so folks don’t simply skip over it entirely.
             </p>
             <p>
-              {this.state.btnName.map((name, index) => {
+              {this.state.btnNames.map((name, index) => {
                 return (
                   <a
                     href="#"
